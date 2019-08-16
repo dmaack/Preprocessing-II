@@ -345,6 +345,7 @@ header .header-content {
   }
 }
 .home .content-pick .destination .btn {
+  animation: pulse 1s alternate infinite;
   display: block;
   margin: 0 10px 20px;
   cursor: pointer;
@@ -375,4 +376,29 @@ header .header-content {
   .home .content-pick .destination .btn:hover {
     background-color: #67b9b7;
   }
+}
+.home .content-pick .destination .btn a {
+  text-decoration: none;
+  color: white;
+}
+@keyframes pulse {
+  0% {
+    background-color: #17A2B8;
+  }
+  100% {
+    background-color: #98cdd6;
+  }
+}
+form {
+  margin: 5% 0 0 25%;
+}
+form h1 {
+  margin-left: 10%;
+}
+form input {
+  display: flex;
+  flex-direction: column;
+}
+form .select {
+  width: 100%;
 }

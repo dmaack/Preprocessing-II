@@ -100,14 +100,43 @@ header{
         }
     
         .btn {
+          animation:pulse 1s alternate infinite;
           .custom-btn();
           @media @mobile{
             .custom-btn(@new-btn-bg, 375px, 15px);
             margin-left:0;
             font-size:1.8rem;
           }
+          a{
+            text-decoration:none;
+            color:white;
+          }
         }// closes btn
        
       }//closes destination
   }// closes content-pick
 }// home
+@keyframes pulse{
+  0%{
+    background-color:@button-bg;
+  }
+  100%{
+    background-color:#98cdd6 ;
+  }
+}
+
+form {
+  margin:5% 0 0 25%;
+  h1{
+    margin-left:10%;
+  }
+  input{
+    display: flex;
+    flex-direction: column;
+  }
+  .select{
+    width:100%;
+  }
+ 
+  
+}
